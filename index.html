@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #name{
+                background-color: black;
+                position: relative;
+                font-size: 30px;
+                text-align: center;
+                color: bisque;
+                padding: 5px;
+                margin: 10px;
+            }
+            #name2{
+                background-color: burlywood;
+                font-size: 20px;
+                text-align: center;
+                color: black;
+                padding:15px;
+                margin: 10px;
+            }
+            #name3{
+                background-color: bisque;
+                text-align: center;
+                color: black;
+                margin: 10px;
+            }
+            #email{
+                padding:50px 20px;
+                display: inline-block;
+                border: 5px solid black;
+                width: 1000px;
+            }
+        </style>
+</head>
+<body>        
+    <div id="name">
+        <h1>Vatika Agrawal</h1>
+        <h3>202000439</h3>
+    </div>
+    <div id="name2">
+        <img onmouseover="large(this)" onmouseout="small(this)" src="991294-virat.jpg" alt="picture" width="320px" height="180px">
+        <script>
+            function large(x){
+                x.style.width="520px"
+                x.style.height="270px";
+
+            }
+            function small(x){
+                x.style.width="360px";
+                x.style.height="180px";
+            }
+        </script>
+        <h2 onmouseover="l(this)" onmouseout="s(this)">VIRAT KOHLI</h2>
+        <script>
+            function l(x){
+                x.style.fontSize="large"
+            }
+            function s(x){
+                x.style.fontSize="small";
+            }
+        </script>
+    </div>
+    <div id="name3">
+        <h2 id="email">vatika_202000439@smit.smu.edu.in</h2>
+    </div>
+</body>
+</html>
